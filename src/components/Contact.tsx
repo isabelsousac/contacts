@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Contact as ContactInterface } from '../interfaces';
 import { getContactById } from '../service';
-import Contacts from './Contacts';
 import { Link, useParams } from 'react-router-dom';
 import { getUniqueAvatarSrc } from "../avatars";
 

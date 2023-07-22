@@ -1,4 +1,4 @@
-import { Box, Divider, Typography } from "@mui/joy"
+import { Typography } from "@mui/joy"
 
 const Footer = () => {
     return (

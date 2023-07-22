@@ -9,7 +9,7 @@ import { getUniqueAvatarSrc } from "../avatars";
 import { useSearchParams } from "react-router-dom";
 
 const Contacts = (): JSX.Element => {
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams] = useSearchParams();
     const [contacts, setContacts] = useState<ContactInterface[]>();
     const [filteredContacts, setFilteredContacts] = useState<ContactInterface[]>();
 
@@ -62,7 +62,7 @@ const Contacts = (): JSX.Element => {
             </div>
         )
     }
-    
+
     return (
         <div >
             <h1>Contacts</h1>

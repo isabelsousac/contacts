@@ -9,7 +9,6 @@ import Button from "@mui/joy/Button";
 import IconButton from "@mui/joy/IconButton";
 import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 import { Link } from 'react-router-dom';
-import Contact from './Contact';
 
 type ContactCardProps = {
     contact: ContactInterface,
