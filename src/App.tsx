@@ -4,7 +4,7 @@ import Contact from './components/Contact';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import PageNotFound from './components/PageNotFound';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { Divider } from '@mui/material';
 import Home from './components/Home';
 
@@ -18,21 +18,25 @@ function App() {
           <Routes>
             <Route
               path="/"
+              element={ <Navigate to="/contacts" /> }
+            />
+            <Route
+              path="/contacts"
               element={<Home />}
             />
 
             <Route
-              path="/contacts"
+              path="/contacts/all"
               element={<Contacts />}
             />
 
             <Route
-              path="/contact/:id"
+              path="/contacts/contact/:id"
               element={<Contact />}
             />
 
             <Route
-              path="/404"
+              path="/contacts/404"
               element={<PageNotFound />}
             />
           </Routes>

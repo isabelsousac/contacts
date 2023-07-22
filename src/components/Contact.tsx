@@ -42,15 +42,15 @@ const Contact = (): JSX.Element => {
                             src={avatar.src}
                         />
                         <h3 className='contact-name'>{contact.name}</h3>
-                        <h4>{contact.username}</h4>
+                        <h4>Username: {contact.username}</h4>
 
                         <br />
 
                         <h2>Personal Info</h2>
                         <h4>{contact.phone}</h4>
                         <h4><a href={contact.website}>{contact.website}</a></h4>
-                        <h4>{contact.address.city}</h4>
-                        <h4>{contact.company.name}</h4>
+                        <h4>City - {contact.address.city}</h4>
+                        <h4>Company - {contact.company.name}</h4>
 
                     </div>
                     <br />
@@ -60,7 +60,7 @@ const Contact = (): JSX.Element => {
         );
     } else {
         return (
-            <Link to="/contacts" />
+            <Link to="/contacts/all" />
         )
     }
 

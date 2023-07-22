@@ -30,7 +30,7 @@ const Header = () => {
     return (
         <div className='header-container'>
             <div className="left-side">
-                <Link to={`/`} style={{ color: 'black' }}>
+                <Link to={`/contacts`} style={{ color: 'black' }}>
                     <HomeOutlinedIcon fontSize="large" />
                 </Link>
 
@@ -44,7 +44,7 @@ const Header = () => {
             <div className="right-side">
                 <div className='search-container'>
                     {
-                        location && location.pathname === "/contacts" ? (
+                        location && location.pathname === "/contacts/all" ? (
                             <input
                                 type='text'
                                 placeholder='Search contact'

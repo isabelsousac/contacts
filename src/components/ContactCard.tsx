@@ -63,7 +63,7 @@ const ContactCard = (props: ContactCardProps): JSX.Element => {
                 >
                     <FavoriteBorder/>
                 </IconButton>
-                <Button component={Link} to={`/contact/${props.contact.id}`} variant="solid" className='contact-more-button'>More</Button>
+                <Button component={Link} to={`/contacts/contact/${props.contact.id}`} variant="solid" className='contact-more-button'>More</Button>
             </CardActions>
         </Card>
     );

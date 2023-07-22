@@ -9,7 +9,7 @@ const Home: React.FC = (): JSX.Element => {
 
             <Divider role="presentation" />
 
-            <h3>Please, click  <Link to="/contacts">here</Link> to see your contacts!</h3>
+            <h3>Please, click  <Link to="/contacts/all">here</Link> to see your contacts!</h3>
         </div>
     );
 }
